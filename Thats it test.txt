@@ -1,0 +1,5 @@
+1. Create Prompt for text input
+2. Add text input function
+3. Return The input text and save it as a variable
+4. Compare this variable to the items in the list
+5. If the item is in the list return the price, if not, return an error.
