@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <img src="NHC logo.png" id="overlay" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>~NHC Revision~</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- partial:index.partial.html -->
+    <div class="container2">
+        <div style="align-items: right;">
+            <a href="WEBPROGRAMMING.html">Back</a>
+            <a href="WEBPROGRAMMING2.html">Next</a>
+            <a href="WEBMAIN.html">Go Home</a>
+        </div>
+        <h1>COMPUTER FUNDIMENTALS</h1>
+        <div style="font-family: Code Squared; font-size:50px; color:black">PROBLEM-SOLVING:</div>
+        <h5>THE METHODS AND PROCESSES THAT ARE USED TO SOLVE PROBLEMS.</h5>
+        <button class="accordion">TOP-DOWN APPROACH</button>
+        <div class="panel2">
+
+            <p>
+                The top-down approach is a problem-solving or design strategy where you
+                start by understanding the overall system or problem and then break it
+                own into smaller, more manageable components or sub-problems. It involves
+                decomposing a complex system or task into simpler and more understandable parts,
+                and then addressing each part in a systematic way.
+            </p>
+            <img src="OIP.jpg">
+        </div>
+        <button class="accordion">BOTTOM-UP APPROACH</button>
+        <div class="panel2">
+            <p>
+                The bottom-up approach is a problem-solving or design strategy where you
+                start by understanding the smallest details or components of a system and then
+                gradually build your way up to the overall solution. Instead of starting with a broad
+                verview, you begin with the specifics and then integrate them into a larger framework
+            </p>
+            <img src="OIP 2.jpg">
+        </div>
+        <h6 style="background-color: rgba(0, 0, 0, 0.623)5b;">
+            <p>>Top-Down Approach</p><br>
+            <ul>
+                <li><strong>Advantages:</strong><br><br>
+                    <ul>
+                        <li>Holistic View: Starts with a high-level overview, providing a comprehensive understanding.
+                        </li><br>
+                        <li>Early Planning: Allows for early planning and identification of major components and their
+                            interactions.</li><br>
+                        <li>Structured Design: Encourages a structured design process, making it easier to manage and
+                            control.</li><br>
+                        <li>Clear Roadmap: Provides a clear roadmap for development or problem-solving.</li><br>
+                        <li>Efficient Resource Allocation: Resources can be allocated efficiently based on the overall
+                            system architecture.</li><br><br>
+                    </ul>
+                </li>
+                <li><strong>Disadvantages:</strong><br><br>
+                    <ul>
+                        <li>Delayed Details: Detailed components are addressed later in the process, potentially leading
+                            to delays in understanding specific requirements.</li><br>
+                        <li>Less Flexibility: May be less flexible to changes or unexpected details that were not
+                            considered in the initial high-level planning.</li><br>
+                        <li>Risk of Oversimplification: There's a risk of oversimplifying complex components during the
+                            initial planning.</li><br>
+                    </ul>
+                </li>
+            </ul>
+            <p>>Bottom-Up Approach</p><br>
+            <ul>
+                <li><strong>Advantages:</strong><br><br>
+                    <ul>
+                        <li>Early Details: Addresses detailed components or smaller problems early in the process,
+                            allowing for a deep understanding.</li><br>
+                        <li>Flexibility: More adaptable to changes or unexpected details as components are developed
+                            independently.</li><br>
+                        <li>Incremental Progress: Allows for incremental progress, making it easier to track and manage.
+                        </li><br>
+                        <li>Detailed Testing: Enables detailed testing of individual components before integration into
+                            the larger system.</li><br>
+                    </ul>
+                </li>
+                <li><strong>Disadvantages:</strong><br><br>
+                    <ul>
+                        <li>Lack of Overall Direction: May lack an overall direction or structure until smaller
+                            components are assembled.</li><br>
+                        <li>Integration Challenges: Integration of individual components into a cohesive whole may
+                            present challenges.</li><br>
+                        <li>Potential for Redundancy: There's a risk of redundant efforts if multiple teams are working
+                            on similar components independently.</li><br><br>
+                    </ul>
+                </li>
+            </ul>
+        </h6>
+        <p>#IMAGE CREDIT: prepinsta.com</p>
+        <div style="align-items: right;">
+            <a href="WEBPROGRAMMING.html">Back</a>
+            <a href="WEBPROGRAMMING2.html">Next</a>
+            <a href="WEBMAIN.html">Go Home</a>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

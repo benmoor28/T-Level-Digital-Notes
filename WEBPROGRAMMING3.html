@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <img src="NHC logo.png" id="overlay" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>~NHC Revision~</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<body>
+    <!-- partial:index.partial.html -->
+    <div class="container2">
+        <div style="align-items: right;">
+            <a href="WEBPROGRAMMING2.html">Back</a>
+            <a href="WEBPROGRAMMING3.html">Next</a>
+            <a href="WEBMAIN.html">Go Home</a>
+        </div>
+        <h1>HARDWARE DEVICES</h1>
+        <h5>HARDWARE DEVICES ARE PHYSICAL COMPONENTS OF A COMPUTER SYSTEM OR ELECTRONIC DEVICE THAT CAN BE TOUCHED AND MANIPULATED. THESE DEVICES PLAY A CRUCIAL ROLE IN PROCESSING AND STORING DATA, FACILITATING COMMUNICATION, AND ENABLING VARIOUS FUNCTIONS.</h5>
+
+        <div class="img img-first1"></div><br><br><br><br><br><br><br><br>
+
+        <button class="accordion">What are they</button>
+
+
+
+        <div class="panel">
+
+            <p>
+                These are physical the Devices that allow the computer system to operate.
+            </p>
+        </div>
+
+
+
+        <div style="font-family: Code Squared; font-size:50px; color:black">INTRODUCTION TO INFORMATION TECHNOLOGY:</div>
+        <h6 style="background-color: rgba(0, 0, 0, 0.623)5b;">
+            Information technology (IT) is the use of any computers, storage, networking and other physical devices, infrastructure and processes to create, process, store, secure and exchange all forms of electronic data.<br>
+            We started by learning about Computational thinking and what the processes are.<br>
+            <br>
+            <br>
+            <br>
+            Computational thinking is a problem-solving and cognitive skill set that involves approaching complex<br>
+            problems in a way that a computer, or a human with a computational mindset, might tackle them. It's a
+            fundamental<br>
+            skill in computer science and is applicable to a wide range of disciplines beyond just programming.<br>
+            <br>
+            Key components of computational thinking include:<br><br>
+
+            Decomposition: Breaking down a complex problem or system into smaller, more manageable parts or
+            components.<br><br>
+
+            Pattern Recognition: Identifying similarities and patterns within problems to facilitate the development of
+            general solutions.<br><br>
+
+            Abstraction: Removing unnecessary details to focus on the key elements of a problem. This involves creating
+            models or representations that capture the essential aspects.<br><br>
+
+            Algorithmic Thinking: Developing step-by-step instructions or procedures for solving a problem. Algorithms
+            are precise sets of instructions for solving specific problems.<br><br>
+
+            Debugging and Troubleshooting: The ability to find and fix errors or problems in a solution. This is a
+            crucial aspect of computational thinking, as it involves identifying and correcting mistakes in algorithms
+            and code.<br><br>
+
+            Computational thinking is not limited to computer scientists; it's a valuable skill for anyone involved in
+            problem-solving across various domains. It encourages a systematic and logical approach to problem-solving,
+            helping individuals think more clearly and rigorously about problems, whether they are related to
+            technology, science, business, or everyday life.<br><br>
+        </h6>
+
+        <br>
+        <div style="align-items: right;">
+            <a href="WEBPROGRAMMING2.html">Next</a>
+            <a href="WEBMAIN.html">Go Home</a>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

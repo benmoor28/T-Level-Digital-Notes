@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <img src="NHC logo Black.png" id="overlay" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>~Content Area 1~</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<body>
+    <!-- partial:index.partial.html -->
+    <div class="container2">
+        <div style="align-items: right;">
+            <a href="WIP.html">Next</a>
+            <a href="index.html">Go Home</a>
+        </div>
+        <br><br>
+        <hd>PROBLEM SOLVING</hd>
+        <br><br>
+        <h5>We will learn the fundimental skills and methods of analysing a problem and working out a solution.</h5>
+
+        <br><br><br><br><br>
+
+        <button class="accordion" style="background-color: rgb(145, 255, 169);">OVERVIEW</button>
+
+        <div class="panel">
+
+            <p>
+                <ol>
+                    <li>
+                        <h2>Computational thinking:</h2>
+                        <p>Using Modularisation, Top-Down and Bottom-Up approaches to solve a problem</p>
+                        <p>Decomposition of problems</p>
+                        <p>Abstraction of problems</p>
+                        <p>Pattern Recognition</p>
+                    </li>
+            
+                    <li>
+                        <h2>Algorithms</h2>
+                        <p>Purpose of an algorithm</p>
+                        <p>Flowcharts</p>
+                        <p>Pseudocode</p>
+                        <p>Written Descriptions</p>
+                        <p>Extra Information</p>
+                    </li>
+
+                </ol>
+            </p>
+        </div>
+        <br>
+        <div style="font-size:50px; color:black">Computational Thinking</div>
+        <br><br><br>
+        <h6 style="background-color: rgba(0, 0, 0, 0.308)5b;">
+            <br>
+            Computational thinking is a problem-solving and cognitive skill set that involves approaching complex problems in a way that a computer, or a human with a computational mindset, might tackle them.
+            <br>
+
+            <br>
+            Key components of computational thinking include:<br><br>
+            
+            <li>Modularisation</li>
+            <li>Decomposition (Big part of Modularisation)</li>
+            <li>Abstraction</li>
+            <li>Pattern Recognition</li>
+            <li>Abstraction</li><br>
+            
+            By applying computational thinking to an overarching problem, you can understand what the problem is and what it consists of.<br><br>
+        </h6>
+
+        <h6 style="background-color: rgba(0, 0, 0, 0.308)5b;">
+            <br>
+            Modularisation
+            <br><br><br>
+            the APPROACH of breaking down a complex problem into smaller, more manageable "modules" or components.
+            <br><br>
+            This approach enables a comprehensive understanding of the problem's requirements, facilitates the identification of patterns, and allows for the reuse and implementation of existing solutions. 
+            <br><br>
+            All of these modules work together to provide a solution to the initial problem, this strategy is often used in object oriented programming.
+            <br><br>
+            <img src="Modularisation diagram.png"  style="width: 700px; height: auto;">
+            <br>
+            Using Modularisation will allow you to Use Two Techniques, Top-Down and Bottom-Up approach.
+        </h6>
+        <button class="accordion">TOP-DOWN APPROACH</button>
+        <div class="panel2">
+
+            <p>
+                The top-down approach is a problem-solving or design strategy where you
+                start by understanding the overall system or problem and then break it
+                own into smaller, more manageable components or sub-problems.
+                <br><br>
+                It involves decomposing a complex system or task into simpler and more understandable parts,
+                and then addressing each part in a systematic way.
+            </p>
+            <img src="Top-Down Diagram.png"  style="width: 700px; height: auto; align-content: center;">
+        </div>
+
+
+        <button class="accordion">BOTTOM-UP APPROACH</button>
+        <div class="panel2">
+            <p>
+                The bottom-up approach is a problem-solving or design strategy where you start by understanding the smallest details or components of a system and then
+                gradually build your way up to the overall solution. Instead of starting with a broadverview, you begin with the specifics and then integrate them into a larger framework
+            </p>
+            <img src="Bottom-Up Diagram.png"  style="width: 700px; height: auto;">
+        </div>
+        <h6 style="background-color: rgba(0, 0, 0, 0.308)5b;">
+            Decomposition
+            <br><br><br>
+            This is the technique of breaking a complex problem or system into smaller, more manageable parts.
+            <br><br>
+            These parts, often referred to as modules, can be developed independently and then integrated to form a complete solution.
+            <br><br>
+            By using decomposition, complex problems become easier to solve, as each module addresses a specific part of the overall problem.
+        </h6>
+        <h6>
+            Abstraction
+            <br><br>
+            This is the approach of analyzing a problem and then removing all unimportant or low-priority parts to focus only on the essential aspects. This process helps in managing complexity by highlighting the crucial elements and ignoring the irrelevant details.
+        </h6>
+
+
+
+        <br>
+        <div style="align-items: right;">
+            <a href="WIP.html">Next</a>
+            <a href="index.html">Go Home</a>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

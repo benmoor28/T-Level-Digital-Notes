@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;700&display=swap');
+
+/* Very unorganised I know, Too late to do anything about it lol ;)*/
+
+:root {
+  --color: #ffffff; 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inconsolata', 'MonoBold', monospace;
+}
+
+#overlay {
+  width: 12%;
+  position: fixed; /* You may also use fixed depending on your needs. */
+  left: 0;
+  top: 5px; /* If you want it at the bottom you probably want bottom:0 instead */
+  z-index: 999;
+}
+
+.container {
+  text-align: center;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(BG1.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* this is where the magic happens */
+}
+
+.container2 {
+  text-align: center;
+  color: rgb(29, 12, 2);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(ContentBG.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* this is where the magic happens */
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  color: rgb(172, 255, 252);
+  outline:auto;
+  outline-color: rgba(0, 0, 0, 0.526);
+  outline-width: 4px;
+  outline-offset: 9px;
+  text-decoration-line: underline;
+  text-decoration-color: rgb(255, 255, 255);
+  font-family: Consolas;
+  background-color: rgba(0, 0, 0, 0.116) ;
+}
+
+p {
+  max-width: auto;
+  line-height: 1.5;
+  padding: 1em;
+  font-size: 1rem;
+}
+hd {
+  font-weight: 700;
+  font-size: 3rem;
+  color: rgb(0, 0, 0);
+  text-decoration-line: underline;
+  text-decoration-color: rgb(0, 0, 0);
+  font-family: Consolas;
+}
+
+hl {
+  max-width: 52ch;
+  line-height: 1.5;
+  text-shadow: #000000;
+  padding: 1em;
+  font-size: 2rem;
+  color: rgb(225, 208, 255);
+  background-color: rgba(28, 28, 28, 0.441) ;
+}
+
+a {
+  display: inline-block;
+  padding: 1em 3.5em;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgb(255, 255, 255);
+  text-decoration: dotted;
+  text-transform: uppercase;
+  border-radius: 0.3em;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  font-size: 0.9rem;
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: 4px;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #cccccc;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: rgba(179, 255, 198, 0.606);
+  max-height: 0;
+  width: 100%;
+  overflow: auto;
+  transition: max-height 0.2s ease-out;
+  text-align: left;
+}
+.wip {
+  text-align: center;
+  color: rgb(29, 12, 2);
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(wip.jpg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* this is where the magic happens */
+}
+.panel2 {
+  padding: 0 18px;
+  background-color: rgb(255, 255, 255);
+  max-height: 0;
+  width: 100%;
+  overflow: auto;
+  transition: max-height 0.5s ease-out;
+  text-align: left;
+}
+
+.blank, .other {
+  width: 100%;
+  min-height: 3vh;
+  background-color: rgb(39, 39, 39);
+}
+
+.second {
+  background-image: url(BG2.jpeg);
+  background-attachment: fixed;
+  height: 1200px;
+  display: flex;
+  flex-direction: row;
+  gap: 1.6em;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin-top: 1em;
+}
+
+.card > a {
+  margin-bottom: 2em;
+}
+
+.item {
+  display: flex;
+  max-width: 320px;
+  background-color: rgb(255, 189, 151);
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0.5em;
+  -webkit-box-shadow: 0px 29px 38px -15px rgba(0,0,0,0.43);
+  -moz-box-shadow: 0px 29px 38px -15px rgba(0,0,0,0.43);
+  box-shadow: 0px 29px 38px -15px rgba(0,0,0,0.43);
+}
+
+.img {
+  width: 90%;
+  height: 200px;
+  background-color: rgb(255, 102, 0);
+  background-size: cover;
+  background-position: center;
+  margin-top: 16px;
+  border-radius: 0.3em;
+}
+
+.img-first {
+  background-image: url(CA1.png);
+}
+
+.img-first1 {
+  background-image: url(Code.png);
+  background-position: center;
+  background-size: contain;
+}
+
+.img-second {
+  background-image: url(CA2.png);
+}
+
+.img-third {
+  background-image: url(CA3.jpg);
+}
+
+.img-fourth {
+  background-image: url(CA4.jpg);
+}
+
+h5 {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-top: 1em;
+}
+
+h6 {
+  text-align: left;
+  font-weight: 700;
+  font-size: 2rem;
+  outline: 4px;
+  margin-top: 1em;
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.623) !important;
+  padding: 20px;
+}
+
+pre code {
+  background-color: #eee;
+  border: 1px solid hsl(0, 0%, 60%);
+  display: block;
+  padding: 20px;
+  text-align: left;
+}
